@@ -25,9 +25,10 @@ body {
 }
 
 .login-image {
-  width: 80%;
-  max-width: 300px;
+  width: 250%; /* Increased width */
+  max-width: 400px; /* Increased maximum width */
   margin-bottom: 2rem;
+  padding-left: 5rem; /* Added left padding */
 }
 
 .logo {
@@ -82,7 +83,7 @@ label {
   padding: 1rem;
   border-radius: 8px;
   border: none;
-  background-color: #2e2b3d;
+  background-color: #504664; /* Change input box color */
   color: #fff;
 }
 

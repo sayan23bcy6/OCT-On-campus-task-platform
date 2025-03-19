@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.css';
 
 const TaskLoopLogin = () => {
@@ -35,7 +36,7 @@ const TaskLoopLogin = () => {
         </form>
 
         <p className="signup-text">
-          Don't have an account? <a href="#signup" className="signup-link">Sign up</a>
+          Don't have an account? <Link to="/register" className="signup-link">Sign up</Link>
         </p>
       </div>
     </div>
