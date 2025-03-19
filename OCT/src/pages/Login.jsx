@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Import useNavigate and Link
 import './Login.css';
 
 const TaskLoopLogin = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+
   return (
     <div className="login-container">
       <div className="login-left">
@@ -36,7 +38,14 @@ const TaskLoopLogin = () => {
         </form>
 
         <p className="signup-text">
-          Don't have an account? <Link to="/register" className="signup-link">Sign up</Link>
+          Don't have an account?{' '}
+          <Link 
+            to="/register" 
+            className="signup-link" 
+            style={{ color: 'blue', textDecoration: 'underline' }}
+          >
+            Sign up
+          </Link> {/* Updated to use Link */}
         </p>
       </div>
     </div>
