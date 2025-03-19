@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: rgb(79, 70, 101);
+}
+
+.static-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #483e5c;
+    z-index: 1; /* Base layer */
+}
+
+.wave-image {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    opacity: 0.6;
+    /* Adjust for transparency */
+    pointer-events: none;
+    /* Prevent interaction */
+}
+
+.nav-container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    padding-right: 2rem; /* Add padding to the right */
+    z-index: 10; /* Top layer - above background image */
+}
+
+.nav-content {
+    width: auto; /* Adjust width to fit content */
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    align-items: center;
+    gap: 1.5rem; /* Adjust spacing between buttons */
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-button,
+.login-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.login-button {
+    background-color: #8E44AD;
+    padding: 0.5rem 2rem;
+    border-radius: 12px;
+}
+
+.main-container {
+    margin-top: 2rem; /* Reduced from 10rem to 7rem */
+    padding: 2rem;
+    z-index: 10; /* Top layer - above background image */
+    position: relative; /* Added to make z-index work */
+}
+
+.subtitle {
+    font-size: 3rem;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.checkmark {
+    color: #27ae60;
+}
+
+.learn-more-link {
+    color: #6C5CE7;
+    text-decoration: none;
+}
+
+.bg_img {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    z-index: 2; /* Middle layer - above background color but below content */
+    opacity: 0.5;
+}

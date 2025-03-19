@@ -1,0 +1,141 @@
+body {
+  background-color: #2C2638;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #2C2638; /* Ensure consistent background */
+  position: relative; /* Enable positioning for child elements */
+}
+
+.login-left {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column-reverse; /* Reverse the order of elements */
+  justify-content: center;
+  align-items: center;
+  background-color: #2C2638; /* Match body background */
+  color: white;
+  padding: 2rem;
+}
+
+.login-image {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  position: absolute; /* Position the logo absolutely */
+  top: 1rem; /* Move it to the top */
+  left: 1rem; /* Move it to the left */
+  font-size: 3rem; /* Adjust font size if needed */
+  font-weight: 700;
+  text-align: left; /* Align text to the left */
+}
+
+.login-left div {
+  align-self: flex-end; /* Move all other text to the right */
+  text-align: right; /* Ensure text aligns to the right */
+}
+
+.login-right {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the left within the right section */
+  padding: 2rem 5rem;
+  color: white;
+  text-align: left; /* Ensure text aligns to the left */
+}
+
+.welcome-back {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  font-size: 0.7rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2e2b3d;
+  color: #fff;
+}
+
+.form-input::placeholder {
+  color: #777;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.remember-me, .forgot-password {
+  color: #ccc;
+}
+
+.forgot-password {
+  font-size: 0.9rem; /* Make the text smaller */
+  margin-left: 0.5rem; /* Move it slightly to the right */
+  color: #AF6CF7; /* Change color */
+  text-decoration: underline; /* Add underline */
+}
+
+.forgot-password:hover {
+  color: #fff; /* Keep hover effect */
+}
+
+.signin-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #7c3aed;
+}
+
+.signup-text {
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.signup-link {
+  color: #8b5cf6;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #7c3aed;
+}
