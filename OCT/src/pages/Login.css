@@ -25,10 +25,10 @@ body {
 }
 
 .login-image {
-  width: 250%; /* Increased width */
-  max-width: 400px; /* Increased maximum width */
+  width: 370%; /* Increased width */
+  max-width: 500px; /* Increased maximum width */
   margin-bottom: 2rem;
-  padding-left: 5rem; /* Added left padding */
+  padding-left: 10rem; /* Added left padding */
 }
 
 .logo {
@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; /* Align content to the left within the right section */
-  padding: 2rem 5rem;
+  padding-left: 250px; /* Add padding to the left */
   color: white;
   text-align: left; /* Ensure text aligns to the left */
 }
@@ -66,6 +66,7 @@ body {
   font-size: 0.7rem;
   color: #999;
   margin-bottom: 2rem;
+  margin-top: 0rem;
 }
 
 .form-group {
@@ -79,7 +80,7 @@ label {
 }
 
 .form-input {
-  width: 100%;
+  width: 130%;
   padding: 1rem;
   border-radius: 8px;
   border: none;
@@ -104,6 +105,7 @@ label {
 .forgot-password {
   font-size: 0.9rem; /* Make the text smaller */
   margin-left: 0.5rem; /* Move it slightly to the right */
+  padding-left: 50px; /* Restore padding to the left */
   color: #AF6CF7; /* Change color */
   text-decoration: underline; /* Add underline */
 }
@@ -113,7 +115,7 @@ label {
 }
 
 .signin-button {
-  width: 100%;
+  width: 140%;
   padding: 1rem;
   background-color: #8b5cf6;
   color: white;
