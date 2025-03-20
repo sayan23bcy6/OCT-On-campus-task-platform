@@ -31,7 +31,13 @@ const TaskLoopLogin = () => {
             <label className="remember-me">
               <input type="checkbox" /> Remember for 30 days
             </label>
-            <a href="#forgot" className="forgot-password">Forgot password</a>
+            <Link
+              to="/forgot-password"
+              className="forgot-password"
+              style={{ color: 'blue', textDecoration: 'underline' }}
+            >
+              Forgot Password?
+            </Link> {/* Updated to use Link */}
           </div>
 
           <button type="submit" className="signin-button">Sign in</button>

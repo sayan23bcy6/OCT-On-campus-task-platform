@@ -17,7 +17,7 @@ function Register() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [name]: type === 'checkbox' ? checked : value
     }));
@@ -57,8 +57,11 @@ function Register() {
               <button type="button" className="resend-btn">Resend OTP</button>
             </div>
 
-            <input type="password" name="password" placeholder="Enter password" value={formData.password} onChange={handleChange} />
-            <input type="password" name="confirmPassword" placeholder="Confirm password" value={formData.confirmPassword} onChange={handleChange} />
+            <div className="input-group">
+              <input type="password" name="password" placeholder="Enter password" value={formData.password} onChange={handleChange} />
+              <input type="password" name="confirmPassword" placeholder="Confirm password" value={formData.confirmPassword} onChange={handleChange} />
+            </div>
+
             <input type="tel" name="mobile" placeholder="Enter Mobile Number" value={formData.mobile} onChange={handleChange} />
 
             <div className="agreement">
