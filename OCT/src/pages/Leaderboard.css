@@ -47,7 +47,7 @@
   background-color: #2D253B;
 }
 
-.leaderboard-table tbody tr:hover {
+.leaderboard-table tbody tr:hover { 
   background-color: #3A3349;
 }
 
