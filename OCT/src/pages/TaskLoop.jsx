@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './TaskLoop.css';
 
 const TaskLoop = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+
   const features = [
     "Post and find campus-related tasks",
     "Secure university email verification",
@@ -18,16 +20,24 @@ const TaskLoop = () => {
       {/* Background and Wave Image */}
       <img src="background.png" alt="background" className='bg_img' />
       {/* Navigation Bar */}
-      <nav className="nav-container">
-        <div className="nav-content">
-          <h1 className="logo">TaskLoop</h1>
+      <nav className="taskloop-nav-container"> {/* Updated class name */}
+          <h1 className="taskloop-logo">TaskLoop</h1> {/* Updated class name */}
           <div className="nav-links">
             <button className="nav-button">Home</button>
             <button className="nav-button">Tasks</button>
-            <button className="nav-button">Leaderboard</button>
-            <Link to="/login" className="login-button">Login</Link> {/* Ensure this points to /login */}
+            <button 
+              className="nav-button" 
+              onClick={() => navigate('/leaderboard')}
+            >
+              Leaderboard
+            </button> {/* Updated to use a button for navigation */}
+            <button 
+              className="login-button" 
+              onClick={() => navigate('/login')}
+            >
+              Login
+            </button>
           </div>
-        </div>
       </nav>
 
       {/* Main Content */}
